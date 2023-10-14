@@ -4,21 +4,29 @@
   "license": "MIT",
   "homepage": "http://ahfarmer.github.io/calculator",
   "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/plugin-syntax-jsx": "^7.22.5",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "babel-jest": "^29.7.0",
     "chai": "^4.2.0",
     "gh-pages": "^2.0.1",
+    "jest": "^29.7.0",
+    "jest-expo": "^49.0.0",
     "prettier": "^1.17.1",
     "react-scripts": "^3.0.1"
   },
   "dependencies": {
     "big.js": "^5.2.2",
     "github-fork-ribbon-css": "^0.2.1",
+    "jest-environment-jsdom": "^29.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
