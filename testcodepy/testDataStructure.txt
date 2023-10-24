@@ -1,0 +1,39 @@
+The testdatastructure should look like this:
+
+it ("", () => {
+ 
+});
+
+An example given:
+
+test("renders without crashing", () => {
+  const div = document.createElement("div");
+  const root = createRoot(div);
+  
+  act(() => {
+    root.render(<App />);
+  });
+});
+
+/**
+ * @jest-environment jsdom
+ */
+
+import React from "react";
+import { createRoot } from 'react-dom/client';
+import { act } from 'react-dom/test-utils';
+import App from "./component/App";
+import Button from "./component/Button";
+import ButtonPanel from "./component/ButtonPanel";
+import Display from "./component/Display";
+import calculate from "./logic/calculate";
+import isNumber from "./logic/isNumber";
+import operate from "./logic/operate";
+import chai from "chai";
+import * as testingLibrary from '@testing-library/react';
+
+The imports from the above are already in the file! Do not write the imports in your answer! Do not answer with anything but code or code comments!
+
+Only give me ONE and I mean ONE test per request!
+
+DO NOT WRITE ANYTHING LIKE: I apologize for the error. It seems that there was a mistake in my previous response. The test case code should not have been included in the answer. After a test failed. ONLY ANSWER IN CODE!
