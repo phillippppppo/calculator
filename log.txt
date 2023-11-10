@@ -1,0 +1,1113 @@
+it("renders the App component without crashing", () => {
+  const div = document.createElement("div");
+  const root = createRoot(div);
+
+  act(() => {
+    root.render(<App />);
+  });
+
+  root.unmount();
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:22340) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+(node:16772) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      26 |   });
+      27 |
+    > 28 |   root.unmount();
+         |        ^
+      29 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/copy.test.js:28:8)
+Test Suites: 2 passed, 2 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        1.973 s, estimated 2 s
+Ran all test suites.
+'Tests passed successfully' 
+it("renders the Button component without crashing", () => {
+  const div = document.createElement("div");
+  const root = createRoot(div);
+
+  act(() => {
+    root.render(<Button name="AC" />);
+  });
+
+  root.unmount();
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:21408) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      26 |   });
+      27 |
+    > 28 |   root.unmount();
+         |        ^
+      29 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/copy.test.js:28:8)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+(node:21696) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Test Suites: 2 passed, 2 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.968 s, estimated 2 s
+Ran all test suites.
+'Tests passed successfully' 
+it("renders the ButtonPanel component without crashing", () => {
+  const div = document.createElement("div");
+  const root = createRoot(div);
+
+  act(() => {
+    root.render(<ButtonPanel />);
+  });
+
+  root.unmount();
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:18408) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      26 |   });
+      27 |
+    > 28 |   root.unmount();
+         |        ^
+      29 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/copy.test.js:28:8)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+(node:21680) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Test Suites: 2 passed, 2 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        2.048 s
+Ran all test suites.
+'Tests passed successfully' 
+it("renders the Display component without crashing", () => {
+  const div = document.createElement("div");
+  const root = createRoot(div);
+
+  act(() => {
+    root.render(<Display value="123" />);
+  });
+
+  root.unmount();
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:19096) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      26 |   });
+      27 |
+    > 28 |   root.unmount();
+         |        ^
+      29 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/copy.test.js:28:8)
+(node:18332) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+Test Suites: 2 passed, 2 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        2.026 s
+Ran all test suites.
+'Tests passed successfully' 
+it("performs addition operation correctly", () => {
+  const result = calculate({ total: "5", next: "10", operation: "+" }, "=");
+  expect(result.total).toEqual("15");
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:20656) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+(node:21240) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });it("renders the Display component without crashing", () => {
+      54 |   const div = document.createElement("div");
+      55 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      59 |   });
+      60 |
+    > 61 |   root.unmount();
+         |        ^
+      62 | });
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:61:8)
+Test Suites: 2 passed, 2 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        2.017 s
+Ran all test suites.
+'Tests passed successfully' 
+it("performs subtraction operation correctly", () => {
+  const result = calculate({ total: "10", next: "5", operation: "-" }, "=");
+  expect(result.total).toEqual("5");
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:20740) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+(node:21992) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });it("renders the Display component without crashing", () => {
+      54 |   const div = document.createElement("div");
+      55 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      59 |   });
+      60 |
+    > 61 |   root.unmount();
+         |        ^
+      62 | });it("performs addition operation correctly", () => {
+      63 |   const result = calculate({ total: "5", next: "10", operation: "+" }, "=");
+      64 |   expect(result.total).toEqual("15");
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:61:8)
+Test Suites: 2 passed, 2 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        2.07 s
+Ran all test suites.
+'Tests passed successfully' 
+it("performs multiplication operation correctly", () => {
+  const result = calculate({ total: "5", next: "10", operation: "x" }, "=");
+  expect(result.total).toEqual("50");
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:21104) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+(node:18884) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });it("renders the Display component without crashing", () => {
+      54 |   const div = document.createElement("div");
+      55 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      59 |   });
+      60 |
+    > 61 |   root.unmount();
+         |        ^
+      62 | });it("performs addition operation correctly", () => {
+      63 |   const result = calculate({ total: "5", next: "10", operation: "+" }, "=");
+      64 |   expect(result.total).toEqual("15");
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:61:8)
+Test Suites: 2 passed, 2 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        2 s
+Ran all test suites.
+'Tests passed successfully' 
+it("performs division operation correctly", () => {
+  const result = calculate({ total: "10", next: "2", operation: "÷" }, "=");
+  expect(result.total).toEqual("5");
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:21208) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+(node:21508) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });it("renders the Display component without crashing", () => {
+      54 |   const div = document.createElement("div");
+      55 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      59 |   });
+      60 |
+    > 61 |   root.unmount();
+         |        ^
+      62 | });it("performs addition operation correctly", () => {
+      63 |   const result = calculate({ total: "5", next: "10", operation: "+" }, "=");
+      64 |   expect(result.total).toEqual("15");
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:61:8)
+Test Suites: 2 passed, 2 total
+Tests:       9 passed, 9 total
+Snapshots:   0 total
+Time:        1.993 s, estimated 2 s
+Ran all test suites.
+'Tests passed successfully' 
+it("checks if a value is a number", () => {
+  const result = isNumber("123");
+  expect(result).toBe(true);
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:19176) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+(node:9584) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });it("renders the Display component without crashing", () => {
+      54 |   const div = document.createElement("div");
+      55 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      59 |   });
+      60 |
+    > 61 |   root.unmount();
+         |        ^
+      62 | });it("performs addition operation correctly", () => {
+      63 |   const result = calculate({ total: "5", next: "10", operation: "+" }, "=");
+      64 |   expect(result.total).toEqual("15");
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:61:8)
+Test Suites: 2 passed, 2 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        2.004 s
+Ran all test suites.
+'Tests passed successfully' 
+it("performs operation with negative numbers correctly", () => {
+  const result = calculate({ total: "-10", next: "5", operation: "+" }, "=");
+  expect(result.total).toEqual("-5");
+});> calculator@0.1.0 test
+> jest && echo 'Tests passed successfully' || echo 'Tests failed'
+(node:21764) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/copy.test.js
+(node:20108) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/test.test.js
+  ● Console
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      32 |   });
+      33 |
+    > 34 |   root.unmount();
+         |        ^
+      35 | });it("renders the Button component without crashing", () => {
+      36 |   const div = document.createElement("div");
+      37 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:34:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      41 |   });
+      42 |
+    > 43 |   root.unmount();
+         |        ^
+      44 | });it("renders the ButtonPanel component without crashing", () => {
+      45 |   const div = document.createElement("div");
+      46 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:43:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      50 |   });
+      51 |
+    > 52 |   root.unmount();
+         |        ^
+      53 | });it("renders the Display component without crashing", () => {
+      54 |   const div = document.createElement("div");
+      55 |   const root = createRoot(div);
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:52:8)
+    console.error
+      Warning: An update to Root inside a test was not wrapped in act(...).
+ECHO ist ausgeschaltet (OFF).
+      When testing, code that causes React state updates should be wrapped into act(...):
+ECHO ist ausgeschaltet (OFF).
+      act(() => {
+        /* fire events that update state */
+      });
+      /* assert on the output */
+ECHO ist ausgeschaltet (OFF).
+      This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+      59 |   });
+      60 |
+    > 61 |   root.unmount();
+         |        ^
+      62 | });it("performs addition operation correctly", () => {
+      63 |   const result = calculate({ total: "5", next: "10", operation: "+" }, "=");
+      64 |   expect(result.total).toEqual("15");
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnIfUpdatesNotWrappedWithActDEV (node_modules/react-dom/cjs/react-dom.development.js:27589:9)
+      at scheduleUpdateOnFiber (node_modules/react-dom/cjs/react-dom.development.js:25508:5)
+      at updateContainer (node_modules/react-dom/cjs/react-dom.development.js:28858:5)
+      at node_modules/react-dom/cjs/react-dom.development.js:29337:7
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26189:14)
+      at ReactDOMRoot.Object.<anonymous>.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (node_modules/react-dom/cjs/react-dom.development.js:29336:5)
+      at Object.unmount (src/test.test.js:61:8)
+Test Suites: 2 passed, 2 total
+Tests:       11 passed, 11 total
+Snapshots:   0 total
+Time:        2.025 s
+Ran all test suites.
+'Tests passed successfully' 
+it("performs percentage operation correctly", () => {
+  const result = calculate({ total: "100", next: "", operation: "" }, "%");
+  expect(result.next).toEqual("1");
+});

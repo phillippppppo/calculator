@@ -15,3 +15,6 @@ npm-debug.log
 
 #env
 .env
+
+# Ignore all .txt files
+*.txt
