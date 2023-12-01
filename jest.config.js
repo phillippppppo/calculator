@@ -1,5 +1,7 @@
+// jest.config.js
 module.exports = {
-    moduleNameMapper: {
-      '\\.(css|less)$': '<rootDir>/styleMock.js',
-    }
-  };
+  moduleNameMapper: {
+    "\\.(css|less|scss)$": "identity-obj-proxy",
+  },
+  moduleDirectories: ["node_modules", "<rootDir>/src"],
+};
