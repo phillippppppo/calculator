@@ -13,8 +13,3 @@ build
 .DS_Store
 npm-debug.log
 
-#env
-.env
-
-# Ignore all .txt files
-*.txt
