@@ -12,3 +12,8 @@ build
 # misc
 .DS_Store
 npm-debug.log
+# stryker temp files
+.stryker-tmp
+
+#reports\mutation
+reports\mutation
