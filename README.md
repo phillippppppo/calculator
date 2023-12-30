@@ -35,6 +35,6 @@ npm install --save-dev @stryker-mutator/javascript-mutator
 
 To run stryker use:
 
-    ```bash
-    npx run stryker
-    ```
+```bash
+ npx run stryker
+```
