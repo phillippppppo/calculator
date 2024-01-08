@@ -5,7 +5,7 @@ This repository is a fork from the main [Calculator repo](https://github.com/and
 ## Changes Made
 
 - Prepared the packages for the trial.
-- Modified one line of code in the `operate` file (line 16) to make this line accessible.
+- Modified one line of code in the `operate` file (line 16) to make this line accessible. Because of the use of `big.js` the operation `two === "0"` wasn´t possible.
 
 ## Issues
 
@@ -13,7 +13,7 @@ This repository is a fork from the main [Calculator repo](https://github.com/and
 
 ## Reproducing the trial
 
-To reproduce the trial, follow these steps:
+To reproduce the trial and receive the test results, follow these steps:
 
 1. Install dependencies using npm:
 
@@ -21,7 +21,7 @@ To reproduce the trial, follow these steps:
     npm install
     ```
 
-2. Run the test cases to obtain code coverage:
+2. Run the test cases to obtain the code coverage. To receive the code coverage of each testsuite, you may have to comment out other testsuites:
 
     ```bash
     npm run test
@@ -29,20 +29,20 @@ To reproduce the trial, follow these steps:
 
 ## Stryker Mutation Testing
 
-To use Stryker you have to downgrade Jest to version ^27, because it has problems handle versions above.
+To use Stryker you have to downgrade Jest to version ^27, because it has problems to handle versions above.
 
 ```bash
 npm install --save-dev jest@27 jest-environment-jsdom@27
-```
-
-If you want to use `npm run test` again, execute:
-
- ```bash
-npm install --save-dev jest@latest jest-environment-jsdom@latest
 ```
 
 To run stryker use:
 
 ```bash
 npx stryker run
+```
+
+If you did downgrade and want to use `npm run test` again, you have to execute:
+
+```bash
+npm install --save-dev jest@latest jest-environment-jsdom@latest
 ```
