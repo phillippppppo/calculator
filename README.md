@@ -7,6 +7,10 @@ This repository is a fork from the main [Calculator repo](https://github.com/and
 - Prepared the packages for the trial.
 - Modified one line of code in the `operate` file (line 16) to make this line accessible.
 
+## Issues
+
+- You can ignore issues like vulnerabilities or the report of DeprecationWarning for `punycode`, because it does not affect any functionality.
+
 ## Reproducing the Trial
 
 To reproduce the trial, follow these steps:
@@ -31,7 +35,7 @@ For Stryker mutation testing, additional dependencies are required. Install them
 npm install --save-dev jest@27 jest-environment-jsdom@27
 ```
 
-The need to downgrade Jest, is because Stryker have problems to handle Jest-versions above 27.
+The need to downgrade Jest, is because Stryker has problems to handle Jest-versions above 27.
 
 To run stryker use:
 
