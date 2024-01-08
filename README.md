@@ -5,7 +5,11 @@ This repository is a fork from the main [Calculator repo](https://github.com/and
 ## Changes Made
 
 - Prepared the packages for the trial.
+- Configure Stryker and Jest
 - Modified one line of code in the `operate` file (line 16) to make this line accessible. Because of the use of `big.js` the operation `two === "0"` wasn´t possible.
+- Added test suites
+- Added data from the OpenAI-threads
+- Added Insomnia file
 
 ## Issues
 
@@ -21,7 +25,7 @@ To reproduce the trial and receive the test results, follow these steps:
     npm install
     ```
 
-2. Run the test cases to obtain the code coverage. To receive the code coverage of each testsuite, you may have to comment out other testsuites:
+2. Run the test cases to obtain the code coverage. To receive the code coverage of each test suite, you may have to comment out other test suites:
 
     ```bash
     npm run test
