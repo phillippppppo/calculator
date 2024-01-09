@@ -1,15 +1,15 @@
 # Calculator Fork for Automated Test Trials
 
-This repository is a fork from the main [Calculator repo](https://github.com/andrewagain/calculator). It has been adapted for a trial to test automatically generated test cases.
+This repository is a fork from the main [calculator repo](https://github.com/andrewagain/calculator). It has been adapted for a trial to test automatically generated test cases.
 
 ## Changes Made
 
-- Prepared the packages for the trial.
+- Prepared the packages for the trial
 - Configure Stryker and Jest
-- Modified one line of code in the `operate` file (line 16) to make this line accessible. Because of the use of `big.js` the operation `two === "0"` wasn´t possible.
+- Modified one line of code in the `operate` file (line 16) to make this line accessible, because of the use of `big.js` the operation `two === "0"` wasn´t possible.
 - Added test suites
 - Added data from the OpenAI-threads
-- Added Insomnia file
+- Added Insomnia file `OpenAI_API`
 
 ## Issues
 
